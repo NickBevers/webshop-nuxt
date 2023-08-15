@@ -1,0 +1,121 @@
+/* gloabl styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --gray: #6F6F6F;
+    --white: #ffffff;
+    --offWhite: #F7F7F7;
+    --whiteTransparent: #ffffff80;
+    --black: #000000;
+    --blackTransparent: #00000040;
+    --red: #B61928;
+    --darkRed: #641928;
+    --purple: #6C0F3A;
+    --gradientRedPurple: linear-gradient(90deg, var(--red) 0%, var(--purple) 100%);
+    --gradientRed: linear-gradient(90deg, var(--red) 0%, var(--darkRed) 100%);
+    --gradientDarkRedPurple: linear-gradient(90deg, var(--darkRed) 0%, var(--purple) 100%);
+    --fontFamilyBody: 'Roboto', sans-serif;
+    --fontFamilyTitle: 'Bebas Neue', sans-serif;
+
+    text-decoration-color: var(--darkRed);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--darkRed);
+    text-decoration-thickness: 0.1875rem;
+    text-underline-offset: 1rem;
+    margin-bottom: 3rem;
+}
+
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--darkRed);
+    text-decoration-thickness: 0.1875rem;
+    text-underline-offset: 1rem;
+    margin-bottom: 3rem;
+}
+
+h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.25rem;
+}
+
+h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1875rem;
+    text-underline-offset: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+p, ol, ul, li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 150%;
+}
+
+ul, ol{
+    margin: 0;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+}
+
+input, textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 150%;
+    resize: none;
+    box-sizing: border-box;
+    background-color: var(--offWhite);
+    border: none;
+    padding-left: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    width: clamp(20rem, 100%, 1366px);
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+}
+
+.purple{
+    color: var(--purple);
+}
+
+.red{
+    color: var(--red);
+}
+
+.darkRed{
+    color: var(--darkRed);
+}

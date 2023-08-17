@@ -77,6 +77,7 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 40%;
+        line-height: 150%;
     }
 
     .contact__info{

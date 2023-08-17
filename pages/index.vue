@@ -37,7 +37,7 @@
         <section class="projects">
             <h2>Onze projecten</h2>
             <div class="projectGrid">
-                <div class="project" v-for="project in projects">
+                <div class="project" v-for="project in projects" :key="project.id">
                     <nuxt-img :src="project.image" :alt="project.title" class="project__image" width="33%" height="400px"/>
                     <div class="project__data">
                         <p class="project__title">{{ project.title }}</p>

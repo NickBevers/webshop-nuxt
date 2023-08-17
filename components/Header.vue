@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="navigation">
-            <nuxt-img src="/images/stikr--logo.svg" alt="stikr logo" height="100" />
+            <nuxt-link to="/"><nuxt-img src="/images/stikr--logo.svg" alt="stikr logo" height="100" /></nuxt-link>
             <div class="icon__container" @click="toggleMenu" v-if="!menuOpen">
                 <Icon name="material-symbols:menu" color="black" size="clamp(1.5rem, 2vw, 2rem)" class="navigation__menuIcon"/>
             </div>
@@ -89,8 +89,12 @@
         color: var(--white);
     }
 
+    .menu__item{
+        transition: transform 0.3s ease-in-out;
+    }
+
     .menu__item:hover{
-        color: var(--offWhite);
+        transform: translateX(1rem);
     }
 
 </style>

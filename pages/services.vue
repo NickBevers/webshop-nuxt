@@ -3,22 +3,22 @@
         <h1>Onze diensten</h1>
         <div class="service__overview">
             <div class="service">
-                <nuxt-img src="/images/services/GraphicDesign.svg" alt="Graphic Design" class="service__image image--design" />
+                <img src="~/assets/images/services/GraphicDesign.svg" alt="Graphic Design" class="service__image image--design" />
                 <nuxt-link :to="{ path: '/services', hash: '#design' }" class="service__link link--design">Grafisch ontwerp</nuxt-link>
             </div>
 
             <div class="service">
-                <nuxt-img src="/images/services/Lettering.svg" alt="Graphic Design"  class="service__image image--lettering" />
+                <img src="~/assets/images/services/Lettering.svg" alt="Graphic Design"  class="service__image image--lettering" />
                 <nuxt-link :to="{ path: '/services', hash: '#lettering'}" class="service__link link--lettering">Belettering</nuxt-link>
             </div>
 
             <div class="service">
-                <nuxt-img src="/images/services/TextilePrint.svg" alt="Graphic Design" class="service__image image--textile" />
+                <img src="~/assets/images/services/TextilePrint.svg" alt="Graphic Design" class="service__image image--textile" />
                 <nuxt-link :to="{ path: '/services', hash: '#textile'}" class="service__link link--textile">Textiel</nuxt-link>
             </div>
 
             <div class="service">
-                <nuxt-img src="/images/services/Events.svg" alt="Graphic Design"  class="service__image image--events" />
+                <img src="~/assets/images/services/Events.svg" alt="Graphic Design"  class="service__image image--events" />
                 <nuxt-link :to="{ path: '/services', hash: '#events'}" class="service__link link--events">Events & beurzen</nuxt-link>
             </div>
         </div>
@@ -39,12 +39,12 @@
                     </p>
                 </div>
                 <div class="service__detailImage">
-                    <nuxt-img src="/images/services/GraphicDesign.svg" alt="Graphic Design" class="detailImage image--design" />
+                    <img src="~/assets/images/services/GraphicDesign.svg" alt="Graphic Design" class="detailImage image--design" />
                 </div>
             </div>
             <div class="projects">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
-                    <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
+                    <img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -65,12 +65,12 @@
                     </p>
                 </div>
                 <div class="service__detailImage">
-                    <nuxt-img src="/images/services/Lettering.svg" alt="Lettering and car wrapping" class="detailImage image--lettering" />
+                    <img src="~/assets/images/services/Lettering.svg" alt="Lettering and car wrapping" class="detailImage image--lettering" />
                 </div>
             </div>
             <div class="projects">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
-                    <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
+                    <img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -95,12 +95,12 @@
                     </p>
                 </div>
                 <div class="service__detailImage">
-                    <nuxt-img src="/images/services/TextilePrint.svg" alt="Textile and printing" class="detailImage image--textile" />
+                    <img src="~/assets/images/services/TextilePrint.svg" alt="Textile and printing" class="detailImage image--textile" />
                 </div>
             </div>
             <div class="projects projects--design">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
-                    <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
+                    <img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -120,12 +120,12 @@
                     </p>
                 </div>
                 <div class="service__detailImage">
-                    <nuxt-img src="/images/services/Events.svg" alt="Events" class="detailImage image--events" />
+                    <img src="~/assets/images/services/Events.svg" alt="Events" class="detailImage image--events" />
                 </div>
             </div>
             <div class="projects">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
-                    <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
+                    <img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -181,7 +181,7 @@
         <div class="carousel__container">
             <el-carousel trigger="click" height="15rem">
                 <el-carousel-item v-for="item in portfolioItems" :key="item.id">
-                    <nuxt-img :src="item.image" :alt="item.title" class="carousel__item__image"/>
+                    <img :src="item.image" :alt="item.title" class="carousel__item__image"/>
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -189,27 +189,30 @@
 </template>
 
 <script setup lang="ts">
+    import imageColor from '../assets/patterns/project--color.png';
+    import imageWhite from '../assets/patterns/project--white.png';
+
     let projects = [
         {
-            image: '/patterns/project--color.png',
+            image: imageColor,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'
         },
         {
-            image: '/patterns/project--white.png',
+            image: imageWhite,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'
         },
         {
-            image: '/patterns/project--color.png',
+            image: imageColor,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'
         },
         {
-            image: '/patterns/project--white.png',
+            image: imageWhite,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'
@@ -219,21 +222,21 @@
     let portfolioItems = [
         {
             id: 1,
-            image: '/patterns/project--color.png',
+            image: imageColor,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'
         },
         {
             id: 2,
-            image: '/patterns/project--white.png',
+            image: imageWhite,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'
         },
         {
             id: 3,
-            image: '/patterns/project--color.png',
+            image: imageColor,
             alt: 'Project image',
             title: 'Titel',
             description: 'project grafisch ontwerp'

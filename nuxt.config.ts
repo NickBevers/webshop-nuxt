@@ -1,16 +1,22 @@
 import { Head } from './.nuxt/components';
+import { RuntimeConfig } from 'nuxt/schema';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    ssr: true,
     pages: true,
-    modules: ["nuxt-icon", '@nuxt/image', '@element-plus/nuxt'],
+    modules: ["nuxt-icon", '@nuxt/image-edge', '@element-plus/nuxt'],
     css: [
         "normalize.css/normalize.css",
         "~/assets/css/global.css",
     ],
+    nitro: { 
+        preset: 'vercel',
+        scanDirs: ['assets', 'static'],
+    },
     image: {
+        format: ["webp", "avif", "png", "jpg", "jpeg", "svg"],
         dir: "assets",
-        // format: ["webp", "avif", "png", "jpg"],
     },
     app: {
         head: {

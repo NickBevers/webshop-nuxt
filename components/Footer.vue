@@ -2,7 +2,7 @@
     <footer>
         <div class="footer__content">
             <div class="footer__content__logo">
-                <nuxt-img src="/images/character--white.svg" alt="stikr logo" height="250" />
+                <img src="~/assets/images/character--white.svg" alt="stikr logo" height="250" />
             </div>
             <div class="footer__content__links">
                 <div class="contactInformation">

@@ -28,7 +28,7 @@
         </div>
 
         <div class="job__image__container">
-            <nuxt-img src="/images/character--white.svg" alt="jobs" width="300" height="300" class="job__image"/>
+            <img src="~/assets/images/character--white.svg" alt="jobs" width="300" height="300" class="job__image"/>
         </div>
     </section>
 </template>

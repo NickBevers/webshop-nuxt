@@ -1,7 +1,7 @@
 <template>
     <div class="home__container">
         <main class="landing">
-            <nuxt-img src="/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" />
+            <img src="~/assets/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" />
         </main>
 
         <section class="introduction">
@@ -21,7 +21,7 @@
             </div>
 
             <div class="intro__stikrLogo">
-                <nuxt-img src="/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo"/>
+                <img src="~/assets/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo"/>
             </div>
         </section>
 
@@ -29,7 +29,7 @@
             <div class="opinion__container">
                 <div class="opinion" v-for="op in opinions">
                     <p class="opinion__text">“{{ op.opinion }}”</p>
-                    <nuxt-img src="/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo"/>
+                    <img src="~/assets/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo"/>
                 </div>
             </div>
         </section>
@@ -38,7 +38,7 @@
             <h2>Onze projecten</h2>
             <div class="projectGrid">
                 <div class="project" v-for="project in projects" :key="project.id">
-                    <nuxt-img :src="project.image" :alt="project.title" class="project__image" width="33%" height="400px"/>
+                    <img :src="project.image" :alt="project.title" class="project__image" height="400px"/>
                     <div class="project__data">
                         <p class="project__title">{{ project.title }}</p>
                         <nuxt-link :to="{name: 'projects-id', params: {id: 'stikrWebsite'}}" class="project__link">Bekijk project</nuxt-link>
@@ -50,18 +50,21 @@
         <section class="customers">
             <h2>Onze klanten</h2>
             <div class="customerSlider">
-                <nuxt-img src="/images/customers/aclagro.png" alt="Aclargo logo" class="customerSlider__logo" />
-                <nuxt-img src="/images/customers/deMeeuw.svg" alt="De Meeuw logo" class="customerSlider__logo" />
-                <nuxt-img src="/images/customers/voka.svg" alt="VOKA logo" class="customerSlider__logo" />
-                <nuxt-img src="/images/customers/bergeratRent.svg" alt="Bergerat Rent logo" class="customerSlider__logo" />
-                <nuxt-img src="/images/customers/beyers.png" alt="Beyers logo" class="customerSlider__logo" />
-                <nuxt-img src="/images/customers/bergeratMonnoyeur.png" alt="Bergerat Monnoyeur logo" class="customerSlider__logo" />
+                <img src="~/assets/images/customers/aclagro.png" alt="Aclargo logo" class="customerSlider__logo" />
+                <img src="~/assets/images/customers/deMeeuw.svg" alt="De Meeuw logo" class="customerSlider__logo" />
+                <img src="~/assets/images/customers/voka.svg" alt="VOKA logo" class="customerSlider__logo" />
+                <img src="~/assets/images/customers/bergeratRent.svg" alt="Bergerat Rent logo" class="customerSlider__logo" />
+                <img src="~/assets/images/customers/beyers.png" alt="Beyers logo" class="customerSlider__logo" />
+                <img src="~/assets/images/customers/bergeratMonnoyeur.png" alt="Bergerat Monnoyeur logo" class="customerSlider__logo" />
             </div>
         </section>
     </div>
 </template>
 
 <script setup lang="ts">
+    import imageColor from '../assets/patterns/project--color.png';
+    import imageWhite from '../assets/patterns/project--white.png';
+
     definePageMeta({
         title: 'Home',
         description: 'Stikr is een jong, creatief bedrijf dat je verrast met frisse ideeën. Van autobelettering tot beursstanden, van bedrukt textiel tot interieuroplossingen: dankzij ons uitgebreide gamma vind je alles wat je nodig hebt op één adres.',
@@ -87,55 +90,55 @@
         {
             title: "Autobelettering",
             tags: ["Autobelettering", "Voertuigen", "Autostickers"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 1
         },
         {
             title: "Gevelreclame",
             tags: ["Gevelreclame", "Gevelletters", "Gevelborden"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 2
         },
         {
             title: "Raambelettering",
             tags: ["Raambelettering", "Raamstickers", "Raamfolie"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 3
         },
         {
             title: "Textielbedrukking",
             tags: ["Textielbedrukking", "T-shirts", "Sweaters"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 4
         },
         {
             title: "Beursstanden",
             tags: ["Beursstanden", "Beurswanden", "Beursmateriaal"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 5
         },
         {
             title: "Interieur",
             tags: ["Interieur", "Interieurstickers", "Interieurprints"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 6
         },
         {
             title: "Spandoeken",
             tags: ["Spandoeken", "Vlaggen", "Banners"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 7
         },
         {
             title: "Reclameborden",
             tags: ["Reclameborden", "Werfborden", "V-borden"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 8
         },
         {
             title: "Stickers",
             tags: ["Stickers", "Vinylstickers", "Muurstickers"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 9
         },
     ];

@@ -3,7 +3,7 @@
         <h2>Portfolio</h2>
         <div class="portfolio__items__container">
             <div class="portfolio__item" v-for="project in projects" :key="project.id">
-                <nuxt-img :src="project.image" alt="project.title" class="project__image"/>
+                <img :src="project.image" alt="project.title" class="project__image"/>
                 <div class="portfolio__item__content">
                     <p class="portfolio__item__link">{{ project.title }}</p>
                     <nuxt-link :to="{name: 'projects-id', params: {id: project.id}}" class="project__link">Bekijk project</nuxt-link>
@@ -14,113 +14,116 @@
 </template>
 
 <script setup lang="ts">
+    import imageColor from '../assets/patterns/project--color.png';
+    import imageWhite from '../assets/patterns/project--white.png';
+
     const projects = [
         {
             title: "Autobelettering",
             tags: ["Autobelettering", "Voertuigen", "Autostickers"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Gevelreclame",
             tags: ["Gevelreclame", "Gevelletters", "Gevelborden"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Raambelettering",
             tags: ["Raambelettering", "Raamstickers", "Raamfolie"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Textielbedrukking",
             tags: ["Textielbedrukking", "T-shirts", "Sweaters"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Beursstanden",
             tags: ["Beursstanden", "Beurswanden", "Beursmateriaal"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Interieur",
             tags: ["Interieur", "Interieurstickers", "Interieurprints"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Spandoeken",
             tags: ["Spandoeken", "Vlaggen", "Banners"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Reclameborden",
             tags: ["Reclameborden", "Werfborden", "V-borden"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Stickers",
             tags: ["Stickers", "Vinylstickers", "Muurstickers"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Gevelreclame",
             tags: ["Gevelreclame", "Gevelletters", "Gevelborden"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Raambelettering",
             tags: ["Raambelettering", "Raamstickers", "Raamfolie"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Textielbedrukking",
             tags: ["Textielbedrukking", "T-shirts", "Sweaters"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Beursstanden",
             tags: ["Beursstanden", "Beurswanden", "Beursmateriaal"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Interieur",
             tags: ["Interieur", "Interieurstickers", "Interieurprints"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Spandoeken",
             tags: ["Spandoeken", "Vlaggen", "Banners"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Reclameborden",
             tags: ["Reclameborden", "Werfborden", "V-borden"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
         {
             title: "Stickers",
             tags: ["Stickers", "Vinylstickers", "Muurstickers"],
-            image: "/patterns/project--color.png",
+            image: imageColor,
             id: 'stikrWebsite'
         },
         {
             title: "Autobelettering",
             tags: ["Autobelettering", "Voertuigen", "Autostickers"],
-            image: "/patterns/project--white.png",
+            image: imageWhite,
             id: 'stikrWebsite'
         },
     ];

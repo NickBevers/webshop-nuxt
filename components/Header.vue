@@ -91,6 +91,7 @@
 
     .menu__item{
         transition: transform 0.3s ease-in-out;
+        margin-bottom: 0.5rem;
     }
 
     .menu__item:hover{

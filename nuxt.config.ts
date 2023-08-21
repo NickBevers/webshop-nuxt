@@ -3,7 +3,7 @@ import { Head } from './.nuxt/components';
 export default defineNuxtConfig({
     devtools: { enabled: true },
     pages: true,
-    modules: ["nuxt-icon", '@nuxt/image'],
+    modules: ["nuxt-icon", '@nuxt/image', '@element-plus/nuxt'],
     css: [
         "normalize.css/normalize.css",
         "~/assets/css/global.css",

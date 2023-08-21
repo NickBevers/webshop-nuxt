@@ -12,13 +12,13 @@
         <div class="relatedProjects">
             <h3>Gelijkaardige projecten</h3>
             <div class="relatedProjects__container">
-                <nuxt-link to="/projects/1" class="project__link">
+                <nuxt-link to="/projects/stikerWebsite" class="project__link">
                     <nuxt-img src="/patterns/project--color.png" class="relatedProject__image" alt="Project 1" />
                 </nuxt-link>
-                <nuxt-link to="/projects/2" class="project__link">
+                <nuxt-link to="/projects/stikerWebsite" class="project__link">
                     <nuxt-img src="/patterns/project--white.png" class="relatedProject__image" alt="Project 2" />
                 </nuxt-link>
-                <nuxt-link to="/projects/3" class="project__link">
+                <nuxt-link to="/projects/stikerWebsite" class="project__link">
                     <nuxt-img src="/patterns/project--color.png" class="relatedProject__image" alt="Project 3" />
                 </nuxt-link>
             </div>

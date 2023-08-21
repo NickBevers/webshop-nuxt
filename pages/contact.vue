@@ -63,11 +63,11 @@
         align-items: flex-start;
         width: 60%;
         margin-right: 5rem;
-        border-image: var(--gradientRedPurple) 30;
+        border-image: var(--gradientRedPurple) 1 round;
         border-width: 0.3rem;
         border-style: solid;
-        border-image-outset: 0.15rem;
-        padding: 3rem;
+        /* padding: 3rem 3rem 2rem 3rem; */
+        padding: 2rem 3rem;
         box-sizing: border-box;
     }
 
@@ -76,12 +76,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width: 40%;
-        line-height: 150%;
+        width: clamp(20%, 40vw, 30%);
     }
 
     .contact__info{
-        margin-bottom: 4rem;
+        height: fit-content;
+        margin-bottom: 3rem;
     }
 
     input[type=text], input[type=email]{

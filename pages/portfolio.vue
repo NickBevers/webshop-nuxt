@@ -19,109 +19,109 @@
             title: "Autobelettering",
             tags: ["Autobelettering", "Voertuigen", "Autostickers"],
             image: "/patterns/project--color.png",
-            id: 1
+            id: 'stikrWebsite'
         },
         {
             title: "Gevelreclame",
             tags: ["Gevelreclame", "Gevelletters", "Gevelborden"],
             image: "/patterns/project--white.png",
-            id: 2
+            id: 'stikrWebsite'
         },
         {
             title: "Raambelettering",
             tags: ["Raambelettering", "Raamstickers", "Raamfolie"],
             image: "/patterns/project--color.png",
-            id: 3
+            id: 'stikrWebsite'
         },
         {
             title: "Textielbedrukking",
             tags: ["Textielbedrukking", "T-shirts", "Sweaters"],
             image: "/patterns/project--white.png",
-            id: 4
+            id: 'stikrWebsite'
         },
         {
             title: "Beursstanden",
             tags: ["Beursstanden", "Beurswanden", "Beursmateriaal"],
             image: "/patterns/project--color.png",
-            id: 5
+            id: 'stikrWebsite'
         },
         {
             title: "Interieur",
             tags: ["Interieur", "Interieurstickers", "Interieurprints"],
             image: "/patterns/project--white.png",
-            id: 6
+            id: 'stikrWebsite'
         },
         {
             title: "Spandoeken",
             tags: ["Spandoeken", "Vlaggen", "Banners"],
             image: "/patterns/project--color.png",
-            id: 7
+            id: 'stikrWebsite'
         },
         {
             title: "Reclameborden",
             tags: ["Reclameborden", "Werfborden", "V-borden"],
             image: "/patterns/project--white.png",
-            id: 8
+            id: 'stikrWebsite'
         },
         {
             title: "Stickers",
             tags: ["Stickers", "Vinylstickers", "Muurstickers"],
             image: "/patterns/project--color.png",
-            id: 9
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Gevelreclame",
+            tags: ["Gevelreclame", "Gevelletters", "Gevelborden"],
+            image: "/patterns/project--white.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Raambelettering",
+            tags: ["Raambelettering", "Raamstickers", "Raamfolie"],
+            image: "/patterns/project--color.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Textielbedrukking",
+            tags: ["Textielbedrukking", "T-shirts", "Sweaters"],
+            image: "/patterns/project--white.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Beursstanden",
+            tags: ["Beursstanden", "Beurswanden", "Beursmateriaal"],
+            image: "/patterns/project--color.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Interieur",
+            tags: ["Interieur", "Interieurstickers", "Interieurprints"],
+            image: "/patterns/project--white.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Spandoeken",
+            tags: ["Spandoeken", "Vlaggen", "Banners"],
+            image: "/patterns/project--color.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Reclameborden",
+            tags: ["Reclameborden", "Werfborden", "V-borden"],
+            image: "/patterns/project--white.png",
+            id: 'stikrWebsite'
+        },
+        {
+            title: "Stickers",
+            tags: ["Stickers", "Vinylstickers", "Muurstickers"],
+            image: "/patterns/project--color.png",
+            id: 'stikrWebsite'
         },
         {
             title: "Autobelettering",
             tags: ["Autobelettering", "Voertuigen", "Autostickers"],
-            image: "/patterns/project--color.png",
-            id: 10
-        },
-        {
-            title: "Gevelreclame",
-            tags: ["Gevelreclame", "Gevelletters", "Gevelborden"],
             image: "/patterns/project--white.png",
-            id: 11
-        },
-        {
-            title: "Raambelettering",
-            tags: ["Raambelettering", "Raamstickers", "Raamfolie"],
-            image: "/patterns/project--color.png",
-            id: 12
-        },
-        {
-            title: "Textielbedrukking",
-            tags: ["Textielbedrukking", "T-shirts", "Sweaters"],
-            image: "/patterns/project--white.png",
-            id: 13
-        },
-        {
-            title: "Beursstanden",
-            tags: ["Beursstanden", "Beurswanden", "Beursmateriaal"],
-            image: "/patterns/project--color.png",
-            id: 14
-        },
-        {
-            title: "Interieur",
-            tags: ["Interieur", "Interieurstickers", "Interieurprints"],
-            image: "/patterns/project--white.png",
-            id: 15
-        },
-        {
-            title: "Spandoeken",
-            tags: ["Spandoeken", "Vlaggen", "Banners"],
-            image: "/patterns/project--color.png",
-            id: 16
-        },
-        {
-            title: "Reclameborden",
-            tags: ["Reclameborden", "Werfborden", "V-borden"],
-            image: "/patterns/project--white.png",
-            id: 17
-        },
-        {
-            title: "Stickers",
-            tags: ["Stickers", "Vinylstickers", "Muurstickers"],
-            image: "/patterns/project--color.png",
-            id: 18
+            id: 'stikrWebsite'
         },
     ];
 </script>

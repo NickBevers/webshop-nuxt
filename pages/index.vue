@@ -41,7 +41,7 @@
                     <nuxt-img :src="project.image" :alt="project.title" class="project__image" width="33%" height="400px"/>
                     <div class="project__data">
                         <p class="project__title">{{ project.title }}</p>
-                        <nuxt-link :to="{name: 'projects-id', params: {id: project.id}}" class="project__link">Bekijk project</nuxt-link>
+                        <nuxt-link :to="{name: 'projects-id', params: {id: 'stikrWebsite'}}" class="project__link">Bekijk project</nuxt-link>
                     </div>
                 </div>
             </div>

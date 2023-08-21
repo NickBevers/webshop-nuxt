@@ -4,26 +4,26 @@
         <div class="service__overview">
             <div class="service">
                 <nuxt-img src="/images/services/GraphicDesign.svg" alt="Graphic Design" class="service__image image--design" />
-                <nuxt-link to="#design" class="service__link link--design">Grafisch ontwerp</nuxt-link>
+                <nuxt-link :to="{ path: '/services', hash: '#design' }" class="service__link link--design">Grafisch ontwerp</nuxt-link>
             </div>
 
             <div class="service">
                 <nuxt-img src="/images/services/Lettering.svg" alt="Graphic Design"  class="service__image image--lettering" />
-                <nuxt-link to="#lettering" class="service__link link--lettering">Belettering</nuxt-link>
+                <nuxt-link :to="{ path: '/services', hash: '#lettering'}" class="service__link link--lettering">Belettering</nuxt-link>
             </div>
 
             <div class="service">
                 <nuxt-img src="/images/services/TextilePrint.svg" alt="Graphic Design" class="service__image image--textile" />
-                <nuxt-link to="#textile" class="service__link link--textile">Textiel</nuxt-link>
+                <nuxt-link :to="{ path: '/services', hash: '#textile'}" class="service__link link--textile">Textiel</nuxt-link>
             </div>
 
             <div class="service">
                 <nuxt-img src="/images/services/Events.svg" alt="Graphic Design"  class="service__image image--events" />
-                <nuxt-link to="#events" class="service__link link--events">Events & beurzen</nuxt-link>
+                <nuxt-link :to="{ path: '/services', hash: '#events'}" class="service__link link--events">Events & beurzen</nuxt-link>
             </div>
         </div>
 
-        <div class="service__detail service--design">
+        <div class="service__detail service--design" id="design">
             <div class="detail__container">
                 <div class="service__textContent">
                     <h3>Grafisch ontwerp</h3>
@@ -43,17 +43,17 @@
                 </div>
             </div>
             <div class="projects">
-                <div class="project" v-for="project in projects">
+                <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
                     </div>
-                </div>
+                </nuxt-link>
             </div>
         </div>
 
-        <div class="service__detail service--lettering">
+        <div class="service__detail service--lettering" id="lettering">
             <div class="detail__container">
                 <div class="service__textContent">
                     <h3>Belettering</h3>
@@ -69,17 +69,17 @@
                 </div>
             </div>
             <div class="projects">
-                <div class="project" v-for="project in projects">
+                <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
                     </div>
-                </div>
+                </nuxt-link>
             </div>
         </div>
 
-        <div class="service__detail service--textile">
+        <div class="service__detail service--textile" id="textile">
             <div class="detail__container">
                 <div class="service__textContent">
                     <h3>Textiel</h3>
@@ -99,17 +99,17 @@
                 </div>
             </div>
             <div class="projects projects--design">
-                <div class="project" v-for="project in projects">
+                <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
                     </div>
-                </div>
+                </nuxt-link>
             </div>
         </div>
 
-        <div class="service__detail service--events">
+        <div class="service__detail service--events" id="events">
             <div class="detail__container">
                 <div class="service__textContent">
                     <h3>Events & beurzen</h3>
@@ -124,13 +124,13 @@
                 </div>
             </div>
             <div class="projects">
-                <div class="project" v-for="project in projects">
+                <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
                     </div>
-                </div>
+                </nuxt-link>
             </div>
         </div>
     </section>
@@ -154,7 +154,7 @@
                     Ontdek hieronder de Fristads catalogus.
                 </p>
 
-                <a href="#" class="link link--fristads">Fristads catalogus</a>
+                <a href="https://catalog.fristads.com/benelux/nl-catalogus-fristads-2022/" class="link link--fristads">Fristads catalogus</a>
             </div>
 
             <div class="externalLink">
@@ -164,7 +164,7 @@
                     Wij helpen je graag verder en voorzien de kledij indien gewenst van een mooie en kwalitatieve opdruk.
                 </p>
 
-                <a href="#" class="link link--cat">Cat catalogus</a>
+                <a href="https://shopcaterpillar.com/" class="link link--cat">Cat catalogus</a>
             </div>
         </section>
     </div>
@@ -367,7 +367,7 @@
         font-family: var(--fontFamilyTitle);
         color: var(--black);
         font-size: 2.25rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .project:nth-of-type(odd) .project__info > *{

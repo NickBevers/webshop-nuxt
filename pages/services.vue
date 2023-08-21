@@ -26,7 +26,7 @@
         <div class="service__detail service--design">
             <div class="detail__container">
                 <div class="service__textContent">
-                    <h2>Grafisch ontwerp</h2>
+                    <h3>Grafisch ontwerp</h3>
                     <p class="service__description">
                         Met een herkenbaar logo toon je in één oogopslag waar je bedrijf, school of vereniging voor staat.<br><br>
                         <span class="bold purple">Is je logo wat verouderd?</span><br>
@@ -42,7 +42,7 @@
                     <nuxt-img src="/images/services/GraphicDesign.svg" alt="Graphic Design" class="detailImage image--design" />
                 </div>
             </div>
-            <div class="projects projects--design">
+            <div class="projects">
                 <div class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
@@ -56,7 +56,7 @@
         <div class="service__detail service--lettering">
             <div class="detail__container">
                 <div class="service__textContent">
-                    <h2>Belettering</h2>
+                    <h3>Belettering</h3>
                     <p class="service__description">
                         <span class="bold purple">Opvallen op de weg?</span> 
                         Wij kleden wagens en trucks aan met creatieve en kwalitatieve belettering. <br><br>
@@ -68,7 +68,7 @@
                     <nuxt-img src="/images/services/Lettering.svg" alt="Lettering and car wrapping" class="detailImage image--lettering" />
                 </div>
             </div>
-            <div class="projects projects--design">
+            <div class="projects">
                 <div class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">
@@ -82,7 +82,7 @@
         <div class="service__detail service--textile">
             <div class="detail__container">
                 <div class="service__textContent">
-                    <h2>Textiel</h2>
+                    <h3>Textiel</h3>
                     <p class="service__description">
                         Als erkend verdeler van Fristads en CAT staan we garant voor werkkledij van hoog niveau. <br><br>
                         Maar ook fluohesjes en labojassen voor scholen, T-shirts of hoodies voor jeugdbewegingen, <br>
@@ -112,7 +112,7 @@
         <div class="service__detail service--events">
             <div class="detail__container">
                 <div class="service__textContent">
-                    <h2>Events & beurzen</h2>
+                    <h3>Events & beurzen</h3>
                     <p class="service__description">
                         Zorg ervoor dat jouw stand de aandacht trekt op elke beurs of evenement. <br><br>
                         Strandvlaggen, gepersonaliseerd meubilair, banners en bedrukte panelen in PVC of dibond: voor elke blikvanger hebben wij de technische knowhow in huis. <br><br>
@@ -123,7 +123,7 @@
                     <nuxt-img src="/images/services/Events.svg" alt="Events" class="detailImage image--events" />
                 </div>
             </div>
-            <div class="projects projects--design">
+            <div class="projects">
                 <div class="project" v-for="project in projects">
                     <nuxt-img :src="project.image" :alt="project.alt" class="project__image" />
                     <div class="project__info">

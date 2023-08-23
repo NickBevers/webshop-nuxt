@@ -4,21 +4,25 @@
         <div class="service__overview">
             <div class="service">
                 <img src="~/assets/images/services/GraphicDesign.svg" alt="Graphic Design" class="service__image image--design" />
+                <!-- <img src="~/assets/images/services/GraphicDesign.svg" alt="Graphic Design" class="service__image image--design" /> -->
                 <nuxt-link :to="{ path: '/services', hash: '#design' }" class="service__link link--design">Grafisch ontwerp</nuxt-link>
             </div>
 
             <div class="service">
                 <img src="~/assets/images/services/Lettering.svg" alt="Graphic Design"  class="service__image image--lettering" />
+                <!-- <img src="~/assets/images/services/Lettering.svg" alt="Graphic Design"  class="service__image image--lettering" /> -->
                 <nuxt-link :to="{ path: '/services', hash: '#lettering'}" class="service__link link--lettering">Belettering</nuxt-link>
             </div>
 
             <div class="service">
                 <img src="~/assets/images/services/TextilePrint.svg" alt="Graphic Design" class="service__image image--textile" />
+                <!-- <img src="~/assets/images/services/TextilePrint.svg" alt="Graphic Design" class="service__image image--textile" /> -->
                 <nuxt-link :to="{ path: '/services', hash: '#textile'}" class="service__link link--textile">Textiel</nuxt-link>
             </div>
 
             <div class="service">
                 <img src="~/assets/images/services/Events.svg" alt="Graphic Design"  class="service__image image--events" />
+                <!-- <img src="~/assets/images/services/Events.svg" alt="Graphic Design"  class="service__image image--events" /> -->
                 <nuxt-link :to="{ path: '/services', hash: '#events'}" class="service__link link--events">Events & beurzen</nuxt-link>
             </div>
         </div>
@@ -40,11 +44,13 @@
                 </div>
                 <div class="service__detailImage">
                     <img src="~/assets/images/services/GraphicDesign.svg" alt="Graphic Design" class="detailImage image--design" />
+                    <!-- <img src="~/assets/images/services/GraphicDesign.svg" alt="Graphic Design" class="detailImage image--design" /> -->
                 </div>
             </div>
             <div class="projects">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <img :src="project.image" :alt="project.alt" class="project__image" />
+                    <!-- <img :src="project.image" :alt="project.alt" class="project__image" /> -->
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -66,11 +72,13 @@
                 </div>
                 <div class="service__detailImage">
                     <img src="~/assets/images/services/Lettering.svg" alt="Lettering and car wrapping" class="detailImage image--lettering" />
+                    <!-- <img src="~/assets/images/services/Lettering.svg" alt="Lettering and car wrapping" class="detailImage image--lettering" /> -->
                 </div>
             </div>
             <div class="projects">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <img :src="project.image" :alt="project.alt" class="project__image" />
+                    <!-- <img :src="project.image" :alt="project.alt" class="project__image" /> -->
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -96,11 +104,13 @@
                 </div>
                 <div class="service__detailImage">
                     <img src="~/assets/images/services/TextilePrint.svg" alt="Textile and printing" class="detailImage image--textile" />
+                    <!-- <img src="~/assets/images/services/TextilePrint.svg" alt="Textile and printing" class="detailImage image--textile" /> -->
                 </div>
             </div>
             <div class="projects projects--design">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <img :src="project.image" :alt="project.alt" class="project__image" />
+                    <!-- <img :src="project.image" :alt="project.alt" class="project__image" /> -->
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -121,11 +131,13 @@
                 </div>
                 <div class="service__detailImage">
                     <img src="~/assets/images/services/Events.svg" alt="Events" class="detailImage image--events" />
+                    <!-- <img src="~/assets/images/services/Events.svg" alt="Events" class="detailImage image--events" /> -->
                 </div>
             </div>
             <div class="projects">
                 <nuxt-link to="/projects/stikerWebsite" class="project" v-for="project in projects">
                     <img :src="project.image" :alt="project.alt" class="project__image" />
+                    <!-- <img :src="project.image" :alt="project.alt" class="project__image" /> -->
                     <div class="project__info">
                         <h3 class="project__title">{{ project.title }}</h3>
                         <p>{{ project.description }}</p>
@@ -182,6 +194,7 @@
             <el-carousel trigger="click" height="15rem">
                 <el-carousel-item v-for="item in portfolioItems" :key="item.id">
                     <img :src="item.image" :alt="item.title" class="carousel__item__image"/>
+                    <!-- <img :src="item.image" :alt="item.title" class="carousel__item__image"/> -->
                 </el-carousel-item>
             </el-carousel>
         </div>

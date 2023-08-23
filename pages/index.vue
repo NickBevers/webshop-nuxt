@@ -2,6 +2,7 @@
     <div class="home__container">
         <main class="landing">
             <img src="~/assets/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" />
+            <!-- <img src="~/assets/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" /> -->
         </main>
 
         <section class="introduction">
@@ -22,6 +23,7 @@
 
             <div class="intro__stikrLogo">
                 <img src="~/assets/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo"/>
+                <!-- <img src="~/assets/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo"/> -->
             </div>
         </section>
 
@@ -30,6 +32,7 @@
                 <div class="opinion" v-for="op in opinions">
                     <p class="opinion__text">“{{ op.opinion }}”</p>
                     <img src="~/assets/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo"/>
+                    <!-- <img src="~/assets/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo"/> -->
                 </div>
             </div>
         </section>
@@ -39,6 +42,7 @@
             <div class="projectGrid">
                 <div class="project" v-for="project in projects" :key="project.id">
                     <img :src="project.image" :alt="project.title" class="project__image" height="400px"/>
+                    <!-- <img :src="project.image" :alt="project.title" class="project__image" height="400px"/> -->
                     <div class="project__data">
                         <p class="project__title">{{ project.title }}</p>
                         <nuxt-link :to="{name: 'projects-id', params: {id: 'stikrWebsite'}}" class="project__link">Bekijk project</nuxt-link>
@@ -56,6 +60,12 @@
                 <img src="~/assets/images/customers/bergeratRent.svg" alt="Bergerat Rent logo" class="customerSlider__logo" />
                 <img src="~/assets/images/customers/beyers.png" alt="Beyers logo" class="customerSlider__logo" />
                 <img src="~/assets/images/customers/bergeratMonnoyeur.png" alt="Bergerat Monnoyeur logo" class="customerSlider__logo" />
+                <!-- <img src="~/assets/images/customers/aclagro.png" alt="Aclargo logo" class="customerSlider__logo" /> -->
+                <!-- <img src="~/assets/images/customers/deMeeuw.svg" alt="De Meeuw logo" class="customerSlider__logo" /> -->
+                <!-- <img src="~/assets/images/customers/voka.svg" alt="VOKA logo" class="customerSlider__logo" /> -->
+                <!-- <img src="~/assets/images/customers/bergeratRent.svg" alt="Bergerat Rent logo" class="customerSlider__logo" /> -->
+                <!-- <img src="~/assets/images/customers/beyers.png" alt="Beyers logo" class="customerSlider__logo" /> -->
+                <!-- <img src="~/assets/images/customers/bergeratMonnoyeur.png" alt="Bergerat Monnoyeur logo" class="customerSlider__logo" /> -->
             </div>
         </section>
     </div>

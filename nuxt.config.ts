@@ -1,5 +1,3 @@
-import { Head } from './.nuxt/components';
-import { RuntimeConfig } from 'nuxt/schema';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
@@ -16,7 +14,16 @@ export default defineNuxtConfig({
     },
     image: {
         format: ["webp", "avif", "png", "jpg", "jpeg", "svg"],
-        dir: "assets",
+        dir: "public",
+        screens: {
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1366,
+        },
+        ipx: {
+            dir: "public",
+        },
     },
     app: {
         head: {

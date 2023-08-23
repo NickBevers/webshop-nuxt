@@ -1,12 +1,13 @@
 <template>
     <header>
         <nav class="navigation">
-            <nuxt-link to="/"><img src="~/assets/images/stikr--logo.svg" alt="stikr logo" height="100" /></nuxt-link>
+            <nuxt-link to="/"><nuxt-img src="/images/stikr--logo.svg" alt="stikr logo" height="100" sizes="100vw" /></nuxt-link>
+            <!-- <nuxt-link to="/"><img src="~/assets/images/stikr--logo.svg" alt="stikr logo" height="100" /></nuxt-link> -->
             <div class="icon__container" @click="toggleMenu" v-if="!menuOpen">
-                <Icon name="material-symbols:menu" color="black" size="2rem" class="navigation__menuIcon"/>
+                <Icon name="material-symbols:menu" color="black" size="32" class="navigation__menuIcon"/>
             </div>
             <div class="icon__container" @click="toggleMenu" v-else>
-                <Icon name="material-symbols:close" color="white" size="2rem" class="navigation__menuIcon"/>
+                <Icon name="material-symbols:close" color="white" size="32" class="navigation__menuIcon"/>
             </div>
         </nav>
 

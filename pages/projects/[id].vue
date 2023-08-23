@@ -7,6 +7,7 @@
 
         <div class="project__image__container">
             <img v-for="image in project.Images" :key="image" :src="image" :alt="project.Title" class="project__image"/>
+            <!-- <img v-for="image in project.Images" :key="image" :src="image" :alt="project.Title" class="project__image"/> -->
         </div>
 
         <div class="relatedProjects">
@@ -14,12 +15,15 @@
             <div class="relatedProjects__container">
                 <nuxt-link to="/projects/stikerWebsite" class="project__link">
                     <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 1" />
+                    <!-- <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 1" /> -->
                 </nuxt-link>
                 <nuxt-link to="/projects/stikerWebsite" class="project__link">
                     <img src="~/assets/patterns/project--white.png" class="relatedProject__image" alt="Project 2" />
+                    <!-- <img src="~/assets/patterns/project--white.png" class="relatedProject__image" alt="Project 2" /> -->
                 </nuxt-link>
                 <nuxt-link to="/projects/stikerWebsite" class="project__link">
                     <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 3" />
+                    <!-- <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 3" /> -->
                 </nuxt-link>
             </div>
         </div>

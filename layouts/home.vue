@@ -6,7 +6,7 @@
         <a href="https://www.facebook.com/stikr" target="_blank" rel="noopener noreferrer">
             <Icon name="ri:facebook-fill" :color="color" height="24" width="auto"/>
         </a>
-        <a href="https://www.instagram.com/stikr/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/stikr2830/" target="_blank" rel="noopener noreferrer">
             <Icon name="ri:instagram-line" :color="color" height="24" width="auto"/>
         </a>
     </div>
@@ -43,7 +43,7 @@
         height: 1.5rem;
         padding: 0.4rem 0.8rem;
         border-radius: 5px;
-        z-index: 50;
+        z-index: 250;
     }
 
     .header--scrolled{

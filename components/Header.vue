@@ -3,20 +3,20 @@
         <nav class="navigation">
             <nuxt-link to="/"><img src="~/assets/images/stikr--logo.svg" alt="stikr logo" height="100" /></nuxt-link>
             <div class="icon__container" @click="toggleMenu" v-if="!menuOpen">
-                <Icon name="material-symbols:menu" color="black" size="clamp(1.5rem, 2vw, 2rem)" class="navigation__menuIcon"/>
+                <Icon name="material-symbols:menu" color="black" size="2rem" class="navigation__menuIcon"/>
             </div>
             <div class="icon__container" @click="toggleMenu" v-else>
-                <Icon name="material-symbols:close" color="white" size="clamp(1.5rem, 2vw, 2rem)" class="navigation__menuIcon"/>
+                <Icon name="material-symbols:close" color="white" size="2rem" class="navigation__menuIcon"/>
             </div>
         </nav>
 
         <section class="menu" :class="menuOpen ?'active' :''">
             <div class="menu__items">
-                <div class="menu__item" @click="menuOpen = false"><nuxt-link to="/">Home</nuxt-link></div>
-                <div class="menu__item" @click="menuOpen = false"><nuxt-link to="/services">Services</nuxt-link></div>
-                <div class="menu__item" @click="menuOpen = false"><nuxt-link to="/portfolio">Portfolio</nuxt-link></div>
-                <div class="menu__item" @click="menuOpen = false"><nuxt-link to="/jobs">Jobs</nuxt-link></div>
-                <div class="menu__item" @click="menuOpen = false"><nuxt-link to="/contact">Contact</nuxt-link></div>
+                <div class="menu__item" @click="handleNavigation"><nuxt-link to="/">Home</nuxt-link></div>
+                <div class="menu__item" @click="handleNavigation"><nuxt-link to="/services">Services</nuxt-link></div>
+                <div class="menu__item" @click="handleNavigation"><nuxt-link to="/portfolio">Portfolio</nuxt-link></div>
+                <div class="menu__item" @click="handleNavigation"><nuxt-link to="/jobs">Jobs</nuxt-link></div>
+                <div class="menu__item" @click="handleNavigation"><nuxt-link to="/contact">Contact</nuxt-link></div>
             </div>
         </section>
     </header>
@@ -29,6 +29,11 @@
     const toggleMenu = () => {
         menuOpen.value = !menuOpen.value;
         menuOpen.value ? emit('open') : emit('close');
+    }
+
+    const handleNavigation = () => {
+        menuOpen.value = false;
+        emit('close');
     }
 
 </script>
@@ -66,7 +71,7 @@
         background-position: 0 0;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
-        z-index: 1;
+        z-index: 200;
         font-family: var(--fontFamilyTitle);
         font-size: 3rem;
         visibility: hidden;

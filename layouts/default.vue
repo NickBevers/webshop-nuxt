@@ -29,6 +29,16 @@
         color.value = 'black'
         document.querySelector('.socialLinks')?.classList.add('menuOpen');
     }
+
+    useHead({
+        link: [
+            {
+                rel: 'preload',
+                as: 'image',
+                href: '/patterns/pattern--header.png'
+            }    
+        ]
+    })
 </script>
 
 <style scoped>
@@ -36,7 +46,8 @@
         width: 100%;
         height: clamp(12rem, 30vh, 18.75rem);
         margin-bottom: 9.5rem;
-        background-image: url('~/assets/patterns/pattern--header.png');
+        background-image: url('/patterns/pattern--header.png');
+        /* background-image: url('~/assets/patterns/pattern--header.png'); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0 0;

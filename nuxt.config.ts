@@ -14,16 +14,16 @@ export default defineNuxtConfig({
     },
     image: {
         format: ["webp", "avif", "png", "jpg", "jpeg", "svg"],
-        dir: "public",
+        // dir: "public",
         screens: {
             sm: 640,
             md: 768,
             lg: 1024,
             xl: 1366,
         },
-        ipx: {
-            dir: "public",
-        },
+        // ipx: {
+        //     dir: "public",
+        // },
     },
     app: {
         head: {
@@ -32,7 +32,9 @@ export default defineNuxtConfig({
                 { charset: "utf-8" },
                 { name: "viewport", content: "width=device-width, initial-scale=1" },
             ],
-            link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+            link: [
+                { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+            ],
         },
     },
 });

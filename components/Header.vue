@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="navigation">
-            <nuxt-link to="/"><nuxt-img src="/images/stikr--logo.svg" alt="stikr logo" height="100" sizes="100vw" /></nuxt-link>
+            <nuxt-link to="/"><nuxt-img preload src="/images/stikr--logo.svg" alt="stikr logo" height="100" sizes="100vw" /></nuxt-link>
             <!-- <nuxt-link to="/"><img src="~/assets/images/stikr--logo.svg" alt="stikr logo" height="100" /></nuxt-link> -->
             <div class="icon__container" @click="toggleMenu" v-if="!menuOpen">
                 <Icon name="material-symbols:menu" color="black" size="32" class="navigation__menuIcon"/>
@@ -66,7 +66,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-image: url('/assets/patterns/pattern--color.png');
+        background-image: url('/patterns/pattern--color.png');
+        /* background-image: url('/assets/patterns/pattern--color.png'); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 0;

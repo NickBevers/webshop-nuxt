@@ -6,7 +6,7 @@
         <p class="project__description">{{ project.Description }}</p>
 
         <div class="project__image__container">
-            <img v-for="image in project.Images" :key="image" :src="image" :alt="project.Title" class="project__image"/>
+            <nuxt-img preload v-for="image in project.Images" :key="image" :src="image" :alt="project.Title" class="project__image" loading="lazy"/>
             <!-- <img v-for="image in project.Images" :key="image" :src="image" :alt="project.Title" class="project__image"/> -->
         </div>
 
@@ -14,15 +14,15 @@
             <h3>Gelijkaardige projecten</h3>
             <div class="relatedProjects__container">
                 <nuxt-link to="/projects/stikerWebsite" class="project__link">
-                    <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 1" />
+                    <nuxt-img preload src="/patterns/project--color.png" class="relatedProject__image" alt="Project 1"/>
                     <!-- <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 1" /> -->
                 </nuxt-link>
                 <nuxt-link to="/projects/stikerWebsite" class="project__link">
-                    <img src="~/assets/patterns/project--white.png" class="relatedProject__image" alt="Project 2" />
+                    <nuxt-img preload src="/patterns/project--white.png" class="relatedProject__image" alt="Project 2"/>
                     <!-- <img src="~/assets/patterns/project--white.png" class="relatedProject__image" alt="Project 2" /> -->
                 </nuxt-link>
                 <nuxt-link to="/projects/stikerWebsite" class="project__link">
-                    <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 3" />
+                    <nuxt-img preload src="/patterns/project--color.png" class="relatedProject__image" alt="Project 3"/>
                     <!-- <img src="~/assets/patterns/project--color.png" class="relatedProject__image" alt="Project 3" /> -->
                 </nuxt-link>
             </div>
@@ -31,8 +31,10 @@
 </template>
 
 <script setup lang="ts">
-    import thumbnail from '~/assets/images/projects/thumbnail.png';
-    import image1 from '~/assets/images/projects/image1.png';
+    let thumbnail = '/images/projects/thumbnail.png';
+    let image1 = '/images/projects/image1.png';
+    // import thumbnail from '~/assets/images/projects/thumbnail.png';
+    // import image1 from '~/assets/images/projects/image1.png';
 
     let project = {
         Title: 'Stikr Website',
@@ -85,8 +87,13 @@
     }
 
     .project__link{
+        width: clamp(20rem, 100%, 25rem);
         height: 15rem;
         overflow: hidden;
+    }
+
+    .relatedProject__image{
+        width: 100%;
     }
 
 </style>

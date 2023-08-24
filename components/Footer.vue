@@ -2,7 +2,7 @@
     <footer>
         <div class="footer__content">
             <div class="footer__content__logo">
-                <nuxt-img src="/images/character--white.svg" alt="stikr logo" height="250" sizes="100vw" />
+                <nuxt-img preload src="/images/character--white.svg" alt="stikr logo" height="250" sizes="100vw" />
                 <!-- <img src="~/assets/images/character--white.svg" alt="stikr logo" height="250" /> -->
             </div>
             <div class="footer__content__links">
@@ -54,7 +54,8 @@
 <style scoped>
     footer{
         height: 450px;
-        background-image: url('~/assets/patterns/footer__pattern.png');
+        background-image: url('/patterns/footer__pattern.png');
+        /* background-image: url('~/assets/patterns/footer__pattern.png'); */
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0 12.5rem;

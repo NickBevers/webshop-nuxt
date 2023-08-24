@@ -1,7 +1,7 @@
 <template>
     <div class="home__container">
         <main class="landing">
-            <img src="~/assets/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" />
+            <nuxt-img preload src="/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" sizes="100vw" />
             <!-- <img src="~/assets/images/stikr--slogan.svg" alt="stikr Slogan" class="landing__slogan" /> -->
         </main>
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="intro__stikrLogo">
-                <img src="~/assets/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo"/>
+                <nuxt-img preload src="/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo" sizes="100vw"/>
                 <!-- <img src="~/assets/images/stikr--logo.svg" alt="stikr logo" class="stikrLogo"/> -->
             </div>
         </section>
@@ -31,7 +31,7 @@
             <div class="opinion__container">
                 <div class="opinion" v-for="op in opinions">
                     <p class="opinion__text">“{{ op.opinion }}”</p>
-                    <img src="~/assets/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo"/>
+                    <nuxt-img preload src="/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo" sizes="100vw"/>
                     <!-- <img src="~/assets/images/stikr--logo.svg" width="55px" alt="stikr logo" class="opinion__logo"/> -->
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <h2>Onze projecten</h2>
             <div class="projectGrid">
                 <div class="project" v-for="project in projects" :key="project.id">
-                    <img :src="project.image" :alt="project.title" class="project__image" height="400px"/>
+                    <nuxt-img preload :src="project.image" :alt="project.title" class="project__image" height="400px"/>
                     <!-- <img :src="project.image" :alt="project.title" class="project__image" height="400px"/> -->
                     <div class="project__data">
                         <p class="project__title">{{ project.title }}</p>
@@ -54,12 +54,12 @@
         <section class="customers">
             <h2>Onze klanten</h2>
             <div class="customerSlider">
-                <img src="~/assets/images/customers/aclagro.png" alt="Aclargo logo" class="customerSlider__logo" />
-                <img src="~/assets/images/customers/deMeeuw.svg" alt="De Meeuw logo" class="customerSlider__logo" />
-                <img src="~/assets/images/customers/voka.svg" alt="VOKA logo" class="customerSlider__logo" />
-                <img src="~/assets/images/customers/bergeratRent.svg" alt="Bergerat Rent logo" class="customerSlider__logo" />
-                <img src="~/assets/images/customers/beyers.png" alt="Beyers logo" class="customerSlider__logo" />
-                <img src="~/assets/images/customers/bergeratMonnoyeur.png" alt="Bergerat Monnoyeur logo" class="customerSlider__logo" />
+                <nuxt-img preload src="/images/customers/aclagro.png" alt="Aclargo logo" class="customerSlider__logo"/>
+                <nuxt-img preload src="/images/customers/deMeeuw.svg" alt="De Meeuw logo" class="customerSlider__logo"/>
+                <nuxt-img preload src="/images/customers/voka.svg" alt="VOKA logo" class="customerSlider__logo"/>
+                <nuxt-img preload src="/images/customers/bergeratRent.svg" alt="Bergerat Rent logo" class="customerSlider__logo"/>
+                <nuxt-img preload src="/images/customers/beyers.png" alt="Beyers logo" class="customerSlider__logo logo--beyers"/>
+                <nuxt-img preload src="/images/customers/bergeratMonnoyeur.png" alt="Bergerat Monnoyeur logo" class="customerSlider__logo"/>
                 <!-- <img src="~/assets/images/customers/aclagro.png" alt="Aclargo logo" class="customerSlider__logo" /> -->
                 <!-- <img src="~/assets/images/customers/deMeeuw.svg" alt="De Meeuw logo" class="customerSlider__logo" /> -->
                 <!-- <img src="~/assets/images/customers/voka.svg" alt="VOKA logo" class="customerSlider__logo" /> -->
@@ -72,8 +72,10 @@
 </template>
 
 <script setup lang="ts">
-    import imageColor from '../assets/patterns/project--color.png';
-    import imageWhite from '../assets/patterns/project--white.png';
+    let imageColor = '/patterns/project--color.png';
+    let imageWhite = '/patterns/project--white.png';
+    // import imageColor from '../assets/patterns/project--color.png';
+    // import imageWhite from '../assets/patterns/project--white.png';
 
     definePageMeta({
         title: 'Home',
@@ -169,7 +171,8 @@
         align-items: center;
         width: clamp(80vw, 100%, 100vw);
         height: 100vh;
-        background-image: url('~/assets/patterns/pattern--white.png');
+        background-image: url('/patterns/pattern--white.png');
+        /* background-image: url('~/assets/patterns/pattern--white.png'); */
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -210,7 +213,8 @@
     .opinion__slider{
         width: 100%;
         height: 400px;
-        background-image: url('~/assets/patterns/pattern--light.png');
+        background-image: url('/patterns/pattern--light.png');
+        /* background-image: url('~/assets/patterns/pattern--light.png'); */
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -332,9 +336,20 @@
         height: 5rem;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        gap: 5rem;
         overflow-x: hidden;
+    }
+
+    .customerSlider__logo{
+        width: auto;
+        height: 3rem;
+        max-width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .logo--beyers{
+        height: 4rem;
     }
 
 </style>

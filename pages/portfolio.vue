@@ -3,7 +3,7 @@
         <h2>Portfolio</h2>
         <div class="portfolio__items__container">
             <div class="portfolio__item" v-for="project in projects" :key="project.id">
-                <img :src="project.image" alt="project.title" class="project__image"/>
+                <nuxt-img preload :src="project.image" alt="project.title" class="project__image"/>
                 <div class="portfolio__item__content">
                     <p class="portfolio__item__link">{{ project.title }}</p>
                     <nuxt-link :to="{name: 'projects-id', params: {id: project.id}}" class="project__link">Bekijk project</nuxt-link>
@@ -14,8 +14,10 @@
 </template>
 
 <script setup lang="ts">
-    import imageColor from '../assets/patterns/project--color.png';
-    import imageWhite from '../assets/patterns/project--white.png';
+    let imageColor = '/patterns/project--color.png';
+    let imageWhite = '/patterns/project--white.png';
+    // import imageColor from '../assets/patterns/project--color.png';
+    // import imageWhite from '../assets/patterns/project--white.png';
 
     const projects = [
         {
@@ -159,6 +161,7 @@
     .project__image{
         object-fit: contain;
         transition: transform .3s ease-in-out;
+        width: 100%;
     }
 
     .portfolio__item__content{
